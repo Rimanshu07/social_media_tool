@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media with Task Assignment</title>
+    <link rel="stylesheet" href="v1.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Social Media Platform</h1>
+    </header>
+    <main>
+        <div id="user-registration">
+            <h2>Register a New User</h2>
+            <input type="text" id="username" placeholder="Username">
+            <button onclick="registerUser()">Register</button>
+        </div>
+        <div id="user-dashboard" style="display: none;">
+            <h2>Welcome, <span id="logged-in-user"></span>!</h2>
+            <h3>Create a Post</h3>
+            <textarea id="post-content" placeholder="Write your post here"></textarea>
+            <button onclick="createPost()">Post</button>
+            <h3>Assign a Task</h3>
+            <input type="text" id="assignee" placeholder="Assign to username">
+            <input type="text" id="task-description" placeholder="Task description">
+            <button onclick="assignTask()">Assign Task</button>
+        </div>
+        <div id="news-feed">
+            <h2>News Feed</h2>
+            <ul id="posts">
+                
+            </ul>
+        </div>
+    </main>
+    <script src="v1.js"></script>
+</body>
+</html>
